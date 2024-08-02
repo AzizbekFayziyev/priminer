@@ -1,0 +1,30 @@
+.transition-300 {
+   transition-duration: 0.3s;
+   transition-property: all;
+   transition-timing-function: cubic-bezier(0.4, 0, -0.2, 1);
+}
+.page-enter-active,
+.page-leave-active {
+   transition: all 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+   opacity: 0;
+   filter: blur(1rem);
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active {
+   transition: all 0.3s;
+   transition-timing-function: cubic-bezier(0.4, 0, -0.2, 1);
+}
+.slide-right-enter-from,
+.slide-right-leave-to {
+   transform: translateX(100%);
+   filter: blur(1rem);
+   -webkit-filter: blur(1rem);
+   -webkit-transform: translateX(100%);
+   -moz-transform: translateX(100%);
+   -ms-transform: translateX(100%);
+   -o-transform: translateX(100%);
+}

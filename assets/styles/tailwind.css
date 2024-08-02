@@ -1,0 +1,59 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --background: #f5f5f7;
+      --primary: #b3cf1d;
+      --secondary: '#53610B';
+      --grey: #5d5d5f;
+      --black: #020105;
+      --border: #ebebeb;
+      --input: #53610b;
+      --radius: 1rem;
+      --header-height: 6rem;
+   }
+}
+/* @layer base {
+   :root {
+      --background: 0 0% 100%;
+
+      --card: 0 0% 100%;
+
+      --popover: 0 0% 100%;
+
+      --primary: 69 76% 45%;
+
+      --secondary: 240 4.8% 95.9%;
+
+      --muted: 240 4.8% 95.9%;
+
+      --grey:
+
+      --accent: 240 4.8% 95.9%;
+
+      --destructive: 0 84.2% 60.2%;
+
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --ring: 142.1 76.2% 36.3%;
+      --radius: 1rem;
+      --header-height: 6rem;
+   }
+} */
+@layer base {
+   * {
+      @apply border-border m-0 p-0;
+   }
+   body {
+      @apply text-black bg-white;
+   }
+}
+
+@layer components {
+   .container {
+      @apply max-w-[1920px];
+   }
+}
